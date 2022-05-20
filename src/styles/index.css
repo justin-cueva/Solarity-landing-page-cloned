@@ -1,7 +1,17 @@
+/* 
+COLOR PALETTE 
+
+primary: #6163ff
+shades: 
+- #9ca9b3
+- #eceded
+*/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #fff;
 }
 
 html {
@@ -10,6 +20,16 @@ html {
 
 body {
   font-family: sans-serif;
+  background-color: #212529;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* REUSABLE CLASSES */
