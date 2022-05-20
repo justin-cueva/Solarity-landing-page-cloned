@@ -1,11 +1,14 @@
 import NavBar from "./NavBar";
+import HeroContent from "./HeroContent";
+
+import "../../styles/sectionHero/sectionHero.css";
 
 const SectionHero = () => {
   return (
-    <div>
+    <section className="section-hero">
       <NavBar />
-      SectionHero
-    </div>
+      <HeroContent />
+    </section>
   );
 };
 

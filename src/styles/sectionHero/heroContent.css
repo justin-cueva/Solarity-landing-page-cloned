@@ -1,0 +1,53 @@
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 42.5%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+}
+
+.hero-content h1 span {
+  color: #6163ff;
+  font-size: inherit;
+}
+
+.hero-content span {
+  font-size: 2rem;
+  color: #9ca9b3;
+}
+
+.hero-content__actions {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-content__actions button {
+  padding: 1.6rem 3.2rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  transition: all 250ms ease;
+}
+
+.btn--economic-paper {
+  background-color: #6163ff;
+}
+
+.btn--economic-paper:hover {
+  background-color: #7173ff;
+}
+
+.btn--view-on-github {
+  background-color: #25282c;
+}
+
+.btn--view-on-github:hover {
+  background-color: #3b3e41;
+}
