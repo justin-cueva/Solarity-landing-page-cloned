@@ -1,3 +1,5 @@
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import "../../styles/sectionHero/navBar.css";
 
 const NavBar = () => {
@@ -16,6 +18,9 @@ const NavBar = () => {
         <li>Twitter</li>
         <button className="nav-link-btn">Discord</button>
       </ul>
+      <span className="nav-burger-menu">
+        <GiHamburgerMenu />
+      </span>
     </nav>
   );
 };

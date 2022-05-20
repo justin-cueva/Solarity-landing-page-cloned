@@ -24,7 +24,7 @@
 .nav-bar ul {
   display: flex;
   align-items: center;
-  gap: 8rem;
+  gap: 6rem;
   font-size: 1.6rem;
 }
 
@@ -48,4 +48,22 @@
 
 .nav-link-btn:hover {
   background-color: #7173ff;
+}
+
+.nav-burger-menu {
+  display: none;
+  font-size: 2.6rem;
+  color: #9ca9b3;
+}
+
+/* 672 px */
+@media (max-width: 42em) {
+  .nav-bar ul {
+    display: none;
+  }
+  .nav-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
