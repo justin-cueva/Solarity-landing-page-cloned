@@ -7,6 +7,9 @@
   position: absolute;
   left: 50%;
   top: 42.5%;
+  width: 100%;
+  max-width: 100rem;
+  padding: 0 2rem;
   transform: translate(-50%, -50%);
 }
 
@@ -22,6 +25,7 @@
 .hero-content span {
   font-size: 2rem;
   color: #9ca9b3;
+  line-height: 1.5;
 }
 
 .hero-content__actions {
@@ -50,4 +54,17 @@
 
 .btn--view-on-github:hover {
   background-color: #3b3e41;
+}
+
+/* 592px */
+@media (max-width: 37em) {
+  .hero-content {
+    gap: 1rem;
+  }
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  .hero-content__actions {
+    flex-direction: column;
+  }
 }
