@@ -28,7 +28,10 @@ const Features = () => {
     <div className="dev-eco-features-container">
       {featuresList.map((feature, index) => {
         return (
-          <div className={`dev-eco-feature dev-eco-feature--${index + 1}`}>
+          <div
+            key={index}
+            className={`dev-eco-feature dev-eco-feature--${index + 1}`}
+          >
             <div className="content">
               <span>{feature.subHeading}</span>
               <h3>{feature.heading}</h3>
