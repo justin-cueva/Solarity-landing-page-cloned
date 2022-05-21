@@ -2,6 +2,7 @@ import SectionHero from "./sectionHero/SectionHero";
 import SectionOwnYourMetaVerse from "./sectionOwnYourMetaVerse/SectionOwnYourMetaVerse";
 import SectionDevEcosystem from "./sectionDevEcosystem/SectionDevEcosystem";
 import SectionWhatMovesUs from "./sectionWhatMovesUs/SectionWhatMovesUs";
+import SectionCTA from "./sectionCTA/SectionCTA";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <SectionOwnYourMetaVerse />
       <SectionDevEcosystem />
       <SectionWhatMovesUs />
+      <SectionCTA />
     </div>
   );
 };
