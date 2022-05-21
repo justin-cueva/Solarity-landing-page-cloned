@@ -42,9 +42,9 @@ const featuresList = [
 const Features = () => {
   return (
     <div className="own-your-metaverse__features">
-      {featuresList.map((feature) => {
+      {featuresList.map((feature, index) => {
         return (
-          <div className="feature">
+          <div key={index} className="feature">
             <span className="feature__icon">{feature.icon}</span>
             <h3>{feature.label}</h3>
             <p>{feature.text}</p>
