@@ -19,9 +19,9 @@ const testimonialsList = [
 const Testimonials = () => {
   return (
     <div className="testimonial-cards">
-      {testimonialsList.map((testimonial) => {
+      {testimonialsList.map((testimonial, index) => {
         return (
-          <div className="testimonial-card">
+          <div key={index} className="testimonial-card">
             <h4>
               {testimonial.english} <span className="slash">/</span>{" "}
               <span className="spanish">{testimonial.spanish}</span>

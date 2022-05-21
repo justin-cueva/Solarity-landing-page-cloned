@@ -1,7 +1,7 @@
 .own-your-metaverse__features {
   width: 100%;
   max-width: 100rem;
-  margin: 9.6rem auto 0 auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 3.2rem;

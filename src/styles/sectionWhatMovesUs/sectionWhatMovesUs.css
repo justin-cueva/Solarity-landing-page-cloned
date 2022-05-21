@@ -1,8 +1,9 @@
 .testimonial-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 6.4rem;
+  padding: 0 3.2rem;
 }
 
 .testimonial-card {
