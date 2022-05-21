@@ -20,7 +20,11 @@ html {
 
 body {
   font-family: sans-serif;
-  background-color: #1a1e21;
+  background-color: #15181a;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 button {
@@ -33,3 +37,29 @@ ul {
 }
 
 /* REUSABLE CLASSES */
+.section {
+  padding: 4rem 0;
+}
+
+/* SECTION INTRO */
+.section-intro {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.section-intro h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.section-intro p {
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #9ca9b3;
+}
