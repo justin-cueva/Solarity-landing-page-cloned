@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: not-allowed;
   font-size: 1.6rem;
   color: #6163ff;
 }
