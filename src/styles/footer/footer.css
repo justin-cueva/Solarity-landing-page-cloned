@@ -4,3 +4,15 @@
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+
+/* 720px */
+@media (max-width: 45em) {
+  .top-footer {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .bottom-footer {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
