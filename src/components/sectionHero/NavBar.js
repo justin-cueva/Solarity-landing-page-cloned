@@ -13,10 +13,10 @@ const NavBar = () => {
         />
       </div>
       <ul>
-        <li>Documentation</li>
-        <li>Medium</li>
-        <li>Twitter</li>
-        <button className="nav-link-btn">Discord</button>
+        <li className="not-allowed">Documentation</li>
+        <li className="not-allowed">Medium</li>
+        <li className="not-allowed">Twitter</li>
+        <button className="nav-link-btn not-allowed">Discord</button>
       </ul>
       <span className="nav-burger-menu">
         <GiHamburgerMenu />

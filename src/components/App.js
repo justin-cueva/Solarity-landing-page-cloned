@@ -3,6 +3,7 @@ import SectionOwnYourMetaVerse from "./sectionOwnYourMetaVerse/SectionOwnYourMet
 import SectionDevEcosystem from "./sectionDevEcosystem/SectionDevEcosystem";
 import SectionWhatMovesUs from "./sectionWhatMovesUs/SectionWhatMovesUs";
 import SectionCTA from "./sectionCTA/SectionCTA";
+import Footer from "./footer/Footer";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <SectionDevEcosystem />
       <SectionWhatMovesUs />
       <SectionCTA />
+      <Footer />
     </div>
   );
 };

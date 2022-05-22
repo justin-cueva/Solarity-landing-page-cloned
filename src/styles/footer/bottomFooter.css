@@ -1,0 +1,27 @@
+.bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+}
+
+.bottom-footer p,
+.bottom-footer ul {
+  color: #9ca9b3;
+  font-size: 1.4rem;
+}
+
+.bottom-footer ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.bottom-footer ul li {
+  color: #9ca9b3;
+  cursor: not-allowed;
+}
+
+.light {
+  color: #eceded;
+  cursor: not-allowed;
+}

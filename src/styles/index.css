@@ -41,6 +41,10 @@ ul {
   padding: 9.2rem 0;
 }
 
+.not-allowed {
+  cursor: not-allowed !important;
+}
+
 /* SECTION INTRO */
 .section-intro {
   width: 100%;
