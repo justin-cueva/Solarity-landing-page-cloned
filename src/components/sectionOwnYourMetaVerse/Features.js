@@ -43,8 +43,18 @@ const Features = () => {
   return (
     <div className="own-your-metaverse__features">
       {featuresList.map((feature, index) => {
+        let delayTime = "";
+        if (index === 0 || index === 3) delayTime = "000";
+        if (index === 1 || index === 4) delayTime = "200";
+        if (index === 2 || index === 5) delayTime = "400";
+
         return (
-          <div key={index} className="feature">
+          <div
+            data-aos="fade-up"
+            data-aos-delay={delayTime}
+            key={index}
+            className="feature"
+          >
             <span className="feature__icon">{feature.icon}</span>
             <h3>{feature.label}</h3>
             <p>{feature.text}</p>

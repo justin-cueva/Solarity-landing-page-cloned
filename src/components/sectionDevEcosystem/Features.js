@@ -27,18 +27,20 @@ const Features = () => {
   return (
     <div className="dev-eco-features-container">
       {featuresList.map((feature, index) => {
+        const fadeDirection = index === 1 ? "left" : "right";
+
         return (
           <div
             key={index}
             className={`dev-eco-feature dev-eco-feature--${index + 1}`}
           >
-            <div className="content">
+            <div data-aos={`fade-${fadeDirection}`} className="content">
               <span>{feature.subHeading}</span>
               <h3>{feature.heading}</h3>
               <p>{feature.text}</p>
             </div>
             <div className="img-wrapper">
-              <img src={feature.image} />
+              <img data-aos="fade-up" src={feature.image} />
             </div>
           </div>
         );

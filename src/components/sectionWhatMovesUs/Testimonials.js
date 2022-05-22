@@ -20,8 +20,17 @@ const Testimonials = () => {
   return (
     <div className="testimonial-cards">
       {testimonialsList.map((testimonial, index) => {
+        let fadeDirection;
+        if (index === 0) fadeDirection = "left";
+        if (index === 1) fadeDirection = "up";
+        if (index === 2) fadeDirection = "right";
+
         return (
-          <div key={index} className="testimonial-card">
+          <div
+            data-aos={`fade-${fadeDirection}`}
+            key={index}
+            className="testimonial-card"
+          >
             <h4>
               {testimonial.english} <span className="slash">/</span>{" "}
               <span className="spanish">{testimonial.spanish}</span>
