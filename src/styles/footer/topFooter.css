@@ -1,0 +1,23 @@
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #6163ff;
+}
+
+.col-primary {
+  color: #6163ff;
+}
