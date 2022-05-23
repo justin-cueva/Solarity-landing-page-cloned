@@ -5,9 +5,11 @@ import "../../styles/footer/topFooter.css";
 const TopFooter = () => {
   return (
     <div className="top-footer">
-      <div className="logo-wrapper">
-        <img src="https://solarity.xyz/static/media/logo.fcb5304f.svg" />
-      </div>
+      <a href="#">
+        <div className="logo-wrapper">
+          <img src="https://solarity.xyz/static/media/logo.fcb5304f.svg" />
+        </div>
+      </a>
       <ul className="social-links">
         <span className="social-link">
           <GrFacebookOption className={"col-primary"} />

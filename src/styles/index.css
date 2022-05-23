@@ -15,6 +15,7 @@ shades:
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -31,6 +32,10 @@ body::-webkit-scrollbar {
 button {
   border: none;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
