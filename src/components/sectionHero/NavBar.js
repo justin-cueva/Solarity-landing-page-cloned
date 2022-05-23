@@ -18,7 +18,7 @@ const NavBar = () => {
         <li className="not-allowed">Twitter</li>
         <button className="nav-link-btn not-allowed">Discord</button>
       </ul>
-      <span className="nav-burger-menu">
+      <span className="nav-burger-menu not-allowed">
         <GiHamburgerMenu />
       </span>
     </nav>
