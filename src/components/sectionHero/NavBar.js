@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
 
 import "../../styles/sectionHero/navBar.css";
 
 const NavBar = () => {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   return (
     <nav className="nav-bar">
       <div className="logo-wrapper">
@@ -13,14 +17,31 @@ const NavBar = () => {
         />
       </div>
       <ul>
-        <li className="not-allowed">Documentation</li>
-        <li className="not-allowed">Medium</li>
-        <li className="not-allowed">Twitter</li>
-        <button className="nav-link-btn not-allowed">Discord</button>
+        <li className="not-allowed hide-item">Documentation</li>
+        <li className="not-allowed hide-item">Medium</li>
+        <li className="not-allowed hide-item">Twitter</li>
+        <button className="nav-link-btn not-allowed hide-item">Discord</button>
       </ul>
-      <span className="nav-burger-menu not-allowed">
-        <GiHamburgerMenu />
-      </span>
+      {!menuIsOpen && (
+        <span className="nav-burger-menu" onClick={() => setMenuIsOpen(true)}>
+          <GiHamburgerMenu />
+        </span>
+      )}
+      {menuIsOpen && (
+        <span className="nav-burger-menu" onClick={() => setMenuIsOpen(false)}>
+          <ImCross />
+        </span>
+      )}
+      {menuIsOpen && (
+        <div className="nav-burger-modal">
+          <ul className="">
+            <li className="not-allowed">Documentation</li>
+            <li className="not-allowed">Medium</li>
+            <li className="not-allowed">Twitter</li>
+            <button className="nav-link-btn not-allowed">Discord</button>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
