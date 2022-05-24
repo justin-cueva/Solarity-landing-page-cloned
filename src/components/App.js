@@ -15,7 +15,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app" style={{ paddingBottom: "30rem" }}>
+    <div className="app" style={{ paddingBottom: "6.4rem" }}>
       <SectionHero />
       <SectionOwnYourMetaVerse />
       <SectionDevEcosystem />
